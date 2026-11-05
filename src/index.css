@@ -1,0 +1,23 @@
+@import "tailwindcss";
+@import "@heroui/styles";
+
+@import "@fontsource/outfit";
+@import "@fontsource/cinzel";
+
+@theme {
+  --font-outfit: "Outfit", sans-serif;
+  --font-cinzel: "Cinzel", serif;
+  --color-matcha: #74A12E;
+  --color-matcha-milk: #A8C686;
+}
+
+@utility text-gradient {
+  background-image: linear-gradient(
+    to bottom,
+    var(--color-mist-800),
+    var(--color-mist-600),
+    var(--color-matcha-milk)
+  );
+  background-clip: text;
+  color: transparent;
+}
